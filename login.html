@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <title>fill da form</title>
+</head>
+<body>
+    <form action="submission.html" method="POST">
+    <!--login (text + password input)-->
+        <h1>the HTML form</h1>
+    <hr>
+        <h2>name & password</h2>
+            <label for="random">Name (type=text):</label>
+            <input placeholder="yo mama" type="text" name="random" id="random">
+    <br>
+    <br>
+            <label for="password">type=Password:</label>
+            <!--"min/max-length" states how long your text input can be-->
+            <input placeholder="can't see dis" type="password" name="password" id="password" minlength="1" maxlength="10" required> 
+            <p><em>text in box was put through a "placeholder!"</em></p>
+    <hr>
+        <h2>you & html</h2>
+        <section class="html">
+            <label for="understanding">Do you understand HTML?</label>
+            <input type="text" name="understanding" id="understanding" required>
+        </section>
+    <br>
+    <br>
+    <!--number input-->
+        <section class="hard">
+            <label for="hard">How hard do you think HTML is, on a scale of 1-10? (type=number)</label>
+            <input type="number" name="hard" id="hard" value="10" min="1" max="10">
+        </section>
+    <br>
+    <br>
+    <!--scroll choice-->
+        <section class="rating">
+            <label for="rating">How would you (type=)range your HTML skills?</label>
+            <br>
+            <span>Beginner</span>
+            <input type="range" name="rating" id="rating" value ="5" min="1" max="5">
+            <span>Expert</span>
+        </section>
+    <br>
+    <br>
+    <!--multiple choice + 1 answer-->
+        <section class="helpfulness">
+            <span>Was this application helpful in learning HTML? (type=radio)</span>
+            <br>
+            <input type="radio" name="helpfulness" id="yes" value="yes">
+            <label for="yes">Yes</label>
+
+            <input type="radio" name="helpfulness" id="no" value="no">
+            <label for="no">No</label>
+        </section>
+    <br>
+    <br>
+    <!--multiple choice + answers-->
+        <section class="comments">
+            <span>What confused you? (type=checkbox)</span>
+            <br>
+            <input type="checkbox" name="comments" id="lists" value="lists">
+            <label for="lists">lists</label>
+
+            <input type="checkbox" name="comments" id="tables" value="tables">
+            <label for="tables">tables</label>
+
+            <input type="checkbox" name="comments" id="forms" value="forms">
+            <label for="forms">forms</label>
+
+            <input type="checkbox" name="comments" id="links" value="links">
+            <label for="links">links</label>
+
+            <input type="checkbox" name="comments" id="images" value="images">
+            <label for="images">images</label>
+
+            <input type="checkbox" name="comments" id="other" value="other">
+            <label for="other">other</label>
+        </section>
+    <!--for dropdown menu-->
+        <section class="other-type">
+            <label for="other">If you (type:select)ed other, please choose what other (option)s:</label>
+            <select id="other" name="other">
+                <option value="headers">Headers</option>
+                <option value="basics">Basic formatting</option>
+                <option value="everything">HTML in general</option>
+                <option value="nothing">Nothing</option>
+            </select>
+        </section>
+    <br>
+    <br>
+    <!--dropdown menu & datalist-->
+        <section class="enjoyment-lvl">
+            <label for="enjoyment">Did you enjoy exploring this application? (type=datalist)</label>
+            <input type="text" list="enjoymentlvl" id="enjoyment" name="enjoyment">
+            <datalist id="enjoymentlvl">
+                <option value="Yes"></option>
+                <option value="No"></option>
+                <option value="Maybe"></option>
+        </section>
+    <!--long answer box-->
+        <section class="explain-why">
+            <label for="explain">Why or why not?</label>
+            <br>
+            <textarea id="explain" name="explain" rows="5" cols="30">created thru textarea</textarea>
+        </section>
+    <!--enjoyment of form-->
+        <section class="rate-form">
+            <label for="rate">How many stars would you rate this form?</label>
+            <!--"min/max" states how big your number can be-->
+            <input type="number" name="rate" id="rate" required min="0" max="5"> 
+        </section>
+    <!--submit form-->
+        <section class="submit">
+            <input type="submit" value="Submit">
+        </section>
+        <p>Thank you for your thoughts :D</p>
+    </form>
+    <hr>
+    <h2>a "form"al rundown</h2>
+    <ul>
+        <li>"form" lets users input info & send!</li>
+        <li>"action" determines where the info goes!</li>
+        <li>"method" determines how the info is sent & processed</li>
+        <li>"input" adds field & "type" sets the attribute, which are:</li>
+    </ul>
+    <ol>
+        <li>text = words/letters</li>
+        <li>password = censors text input</li>
+        <li>number = self-explanatory</li>
+        <li>range = slider</li>
+        <li>radio = radio button / single choice</li>
+        <li>checkbox = checkbox / multiple choice</li>
+        <li>submit = button</li>
+        <li>text + "list" attribute -> "datalist" element if list of input & id of datalist are same</li>
+        <li>+ "required" = field needs to be answered</li>
+    </ol>
+    <ul>
+        <li>"select" + "option" = dropdown list</li>
+        <li>"datalist" + "option" = search choices</li>
+        <li>"textarea" = customizable text input field</li>
+        <li>and submitting form = "name" of fields with input & "value" of them are sent as name=value pairs</li>
+    </ul>
+    <p>happy learnings!</p>
+</body>
+</html>
